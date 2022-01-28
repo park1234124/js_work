@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/prefixfree.min.js"></script>
+    <style>
+        div{
+            width:80%; height:400px;
+            border:1px solid black;
+            margin:0 auto;
+            /* column-count: 3; */
+            column-width:100px;
+            column-rule:2px dotted black;
+            text-align:justify;
+        }
+        #d01{
+            column-span:all;
+            column-count:1;
+          }
+        table{width:800px; margin:50px auto; }
+        table,th,td{border:1px solid black;
+                    border-collapse:collapse;
+        }
+        td{width:200px; height: 80px;
+            text-align:center; vertical-align: middle; /* align:top,middle,bottom 표만 설정 가능 */
+        } 
+        thead {background:#efefef; }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <td>번호</td>
+            <td>제목</td>
+            <td>리조트</td>
+            <td>등록일자</td>
+        </thead>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td>2022 설명절 선물세트</td>
+            <td>리솜리조트</td>
+            <td>2022-01-12</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <div>
+        (서울=뉴스1) 안태현 기자 = 가수 겸 방송인 김종국이 결혼에 대한 생각을 밝혔다.
+
+        지난 13일 김종국의 유튜브 채널 '짐종국'에는 'MZ세대를 만난 X세대'라는 제목의 영상이 게시됐다. 해당 영상에서 김종국은 5촌 조카인 가수 소야와 그의 동생을 만나 가로수길의 카페를 찾은 모습이 그려졌다.
+        
+        이날 김종국은 가로수길로 이동 중이던 차 안에서 "나는 여자친구와 디저트를 먹으러 가거나 이런 걸 한 번도 해본 적 없다"라며 "가로수길도 체육관이 가로수길에 있을 때 외에는 다른 목적을 가지고 와본 적이 거의 처음"이라고 얘기해 눈길을 끌었다.
+       
+        <div id="d01"> 이어 조카들을 만난 김종국은 카페에서 디저트를 먹으며 대화를 나눴다. 디저트의 가격에 놀라던 김종국을 두고 소야는 "그래도 여자친구랑 올 법 하죠"라고 질문했고, 김종국은 "(여자친구와는) 다 하지, 다 해"라고 대답했다.
+        
+        김종국은 그러면서 "나는 여자친구가 있을 때 싸운 유일한 이유가 항상 운동이었다"라고 말하기도. 이에 조카들은 "아니면 여행을 가"라고 말했고, 김종국은 "(여행 갈 때도) 운동 할 수 있는 데를 먼저 알아보고 근처에 숙소에 잡는다"라고 남다른 운동 사랑을 전했다.</div>
+        
+        조카들은 그런 김종국에게 "그러면 (운동할 때) 여자친구는 (여행 가서) 뭘 하냐"라고 따졌고, 김종국은 "여자친구에게는 카드를 주고 쇼핑을 하라고 하면 되지 않을까"라고 말했다.
+        
+        김종국은 "나는 결혼을 하려고 마음 먹으면 체육관을 차려야 겠다"라고 말해 시선을 모으기도 했다. 이유에 대해 김종국은 "내가 운동을 하려고 한다"라며 "내 회사인데 하루에 한 번은 가야 하지 않겠나, 내가 헬스장을 차리면 아내가 가지 말라고 할 명분이 없다"라고 얘기해 웃음을 자아냈다.
+    </div>
+</body>
+</html>

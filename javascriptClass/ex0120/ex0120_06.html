@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex0120_06</title>
+    <style>
+        table, th, td { border: 1px solid black;
+                        border-collapse: collapse;
+                        width: 300px; height: 40px;
+                        text-align: center;}
+    </style>
+</head>
+<body> <!--이름 국영수 입력을 받아 합계와 평균 출력-->
+    <form action="">
+        <label>학생 이름</label>
+        <br>
+        <input type="text" name="studentName" id="studentName">
+        <br>
+        <label>국어 점수</label>
+        <br>
+        <input type="text" name="jumsuKor" id="jumsuKor">
+        <br>
+        <label>영어 점수</label>
+        <br>
+        <input type="text" name="jumsuEng" id="jumsuEng">
+        <br>
+        <label>수학 점수</label>
+        <br>
+        <input type="text" name="jumsuMath" id="jumsuMath">
+        <br>
+        <br>
+        <button type="button" onclick="gogo()">접수</button>
+        <br><br>
+    </form>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+            <th>합계</th>
+            <th>평균</th>
+        </tr>
+        <tr>
+            <td id="SN"></td>
+            <td id="KOR"></td>
+            <td id="Eng"></td>
+            <td id="Math"></td>
+            <td id="Total"></td>
+            <td id="Avg"></td>
+        </tr>
+    </table>
+    <script>
+        function gogo() {
+            let studentName = document.getElementById("studentName").value;
+            let jumsuKor = Number(document.getElementById("jumsuKor").value);
+            let jumsuEng = Number(document.getElementById("jumsuEng").value);
+            let jumsuMath = Number(document.getElementById("jumsuMath").value);
+            let jumsuTotal = jumsuKor+jumsuEng+jumsuMath;
+            let jumsuAvg = (jumsuKor+jumsuEng+jumsuMath)/3;
+
+            document.getElementById("studentName").innerText=studentName;
+            document.getElementById("jumsuKor").innerText=jumsuKor;
+            document.getElementById("jumsuEng").innerText=jumsuEng;
+            document.getElementById("jumsuMath").innerText=jumsuMath;
+            document.getElementById("jumsuTotal").innerText=jumsuTotal;
+            document.getElementById("jumsuAvg").innerText=jumsuAvg;
+        }
+    </script>
+</body>
+</html>
